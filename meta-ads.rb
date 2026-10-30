@@ -9,9 +9,9 @@ class MetaAds < Formula
 
   desc "CLI for interacting with the Meta Marketing API"
   homepage "https://pypi.org/project/meta-ads/"
-  url "https://files.pythonhosted.org/packages/cd/25/647e8c1309f8df9f9a45cdb935ea71e62c9ac4573e579cc5d5c9388403ab/meta_ads-1.2.0-cp314-cp314-macosx_11_0_arm64.whl"
-  version "1.2.0"
-  sha256 "6e6437546b0c53ccf73371b67b6b51618df6753ea7d6e4b52240acfc2c1929da"
+  url "https://files.pythonhosted.org/packages/f5/62/207848853ec2aa688bc641b47eeb9733fcd97a5f90ead44a0c1c70fc9b07/meta_ads-1.3.1-cp314-cp314-macosx_11_0_arm64.whl"
+  version "1.3.1"
+  sha256 "1fe7859d5869b9409b477c228183e6a1f5245f786d9b742a2e16c6829b32b2f1"
 
   depends_on "python@3.14"
   depends_on macos: :big_sur
@@ -26,13 +26,18 @@ class MetaAds < Formula
   end
 
   resource "facebook-business" do
-    url "https://files.pythonhosted.org/packages/ba/39/ea4250789fe678710e947db8fb25e9338c5932c8097a500c57140112359b/facebook_business-24.0.1-py3-none-any.whl"
-    sha256 "d91d51119db28b6c462e05c3ae83854b5b5e5f12543d10a57104a29b1c9129e3"
+    url "https://files.pythonhosted.org/packages/6e/1f/e3afbb6ea140a40b8887064beeeb27c22ca056020347ea6845fec82a1fb5/facebook_business-26.0.2-py3-none-any.whl"
+    sha256 "dd7168db675d101aa3fc77f745fdda2f4dc2ab4d5dd6c06ed67a2baab4c685f3"
+  end
+
+  resource "capi-param-builder-python" do
+    url "https://files.pythonhosted.org/packages/ea/99/cb3bb8042990f6432b71258426af08fc974f5146faf211da46833410d5e4/capi_param_builder_python-1.3.2-py3-none-any.whl"
+    sha256 "6799999a2eb16f95788145780e8f5d5b4574db51645216e9daea6f7d12483eff"
   end
 
   resource "python-dotenv" do
-    url "https://files.pythonhosted.org/packages/0d/17/c5c6b53ddc18f297992099b3d9ec16c855c0ccc83263a21fe4d1c625ec6c/python_dotenv-1.2.3-py3-none-any.whl"
-    sha256 "904552145e8bfed22162c09dab1c2b9b54fefa7b23ba780f4f26ca0316b0f0d9"
+    url "https://files.pythonhosted.org/packages/60/d1/38f3a3405989a89ac18390803e70c6ad7c7760da4f9b83cbeca0c44a0c72/python_dotenv-1.2.4-py3-none-any.whl"
+    sha256 "42269a8a5b3fd54ffa6f3d84b18abed50064717576b4ecf03dc4a55d8aa04fdc"
   end
 
   resource "rich" do
@@ -61,8 +66,8 @@ class MetaAds < Formula
   end
 
   resource "charset-normalizer" do
-    url "https://files.pythonhosted.org/packages/cc/61/d01fc49b8dea277640b55a9e15960dbca9fdc8c9fde18e572d39c59f4019/charset_normalizer-3.5.1-py3-none-any.whl"
-    sha256 "6df0ec430f9a831772c23ca5a224cba36517a58a84bb32c32bb59a9fa67c47f6"
+    url "https://files.pythonhosted.org/packages/fc/ad/d07d7862a62ffa6d79d68074d14823243dd235a77c45262acbf6adeb28bf/charset_normalizer-3.5.2-py3-none-any.whl"
+    sha256 "b6b751274acb69d77b3323d6b7dbaa3c7fdfc1eb829b7eb61d262f32e1af9685"
   end
 
   resource "idna" do
@@ -76,8 +81,8 @@ class MetaAds < Formula
   end
 
   resource "certifi" do
-    url "https://files.pythonhosted.org/packages/0b/a7/71ac2cff56fec219ed242bb11b8efb69fcc4bec75db06fb7bfe35de520e6/certifi-2026.7.22-py3-none-any.whl"
-    sha256 "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775"
+    url "https://files.pythonhosted.org/packages/32/d1/a3652fe2c19134d0d15922177821d863cbd7e842d53a21bbe7e8e3a1b5ac/certifi-2026.10.23-py3-none-any.whl"
+    sha256 "e9b54de76e530bb6cf0ccd036787103acb58fd42ba930ea8bf948ddbaa2f61d1"
   end
 
   resource "six" do
@@ -101,8 +106,8 @@ class MetaAds < Formula
   # build backend into its isolated build env. Moot once bottled: bottle
   # pours never run this path at all.
   resource "aiohttp" do
-    url "https://files.pythonhosted.org/packages/58/d9/22ce5786ac0c1653ae8b6c23bded02c1686d11f0dbb45b31ce128e0df985/aiohttp-3.14.3.tar.gz"
-    sha256 "9491196535a88924a60afd5b5f434b5b203b6cc616250878dbdb223a8f7844bc"
+    url "https://files.pythonhosted.org/packages/6c/4c/bdccd81e9ee225b69c60e7766c9a5b05364f118f4d383713b89a682d772d/aiohttp-3.14.5.tar.gz"
+    sha256 "5558a7f5a05af9ecf744af91e5baefc436f93c9333e656c27ec253f9a6bbe178"
   end
 
   resource "aiohappyeyeballs" do
@@ -126,8 +131,8 @@ class MetaAds < Formula
   end
 
   resource "multidict" do
-    url "https://files.pythonhosted.org/packages/be/59/e26cb779be4c591d1a910f59d29aca9fba4de70349840a833beba2652371/multidict-6.9.1-py3-none-any.whl"
-    sha256 "7bf6478188f4e47bf5686e8a33da4ae28bf43b1b2528d9ee144d28492bfac60b"
+    url "https://files.pythonhosted.org/packages/9d/96/1aaad0e5df33f1f5af21775c411349c0234a6edd581ea403bc81919a6eab/multidict-7.2.1-py3-none-any.whl"
+    sha256 "08ea94663d9e7c25d14d78222f7aee906c472d4837766bec62477c38f6e419dc"
   end
 
   resource "propcache" do
