@@ -13,7 +13,14 @@ document.
 
 Once homebrew is installed, simply run:
 
-    brew tap facebook/fb
+    brew tap meta/fb
+    brew trust meta/fb
+
+Current Homebrew refuses formulae from a tap you have not trusted, along with
+the dependencies they pull in from it. If you tapped `facebook/fb` before
+GitHub renamed the facebook organization to meta, run `brew update` instead of
+`brew tap meta/fb`: Homebrew moves the tap to `meta/fb` but drops its trust, so
+`brew trust meta/fb` is still needed.
 
 Some of these formulae may require OS X 10.10 (Yosemite) or higher.
 
@@ -67,7 +74,7 @@ Please file bug reports and feature requests as GitHub issues against the indivi
 To do development on these formulae, first fork the repository on GitHub. Add
 your fork as a remote to your local clone:
 
-    cd $(brew --prefix)/Library/Taps/facebook/homebrew-fb
+    cd $(brew --prefix)/Library/Taps/meta/homebrew-fb
     git remote add me git@github.com:YOUR_GITHUB_USERNAME/homebrew-fb.git
     git fetch me
 
